@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volatile Array</title>
+</head>
+
+<body>
+    <h2>Array Operations</h2>
+    <p>Set and enter all the elements of the array separated by commas:</p> <input type="text" id="arrayInput">
+    <button onclick="sortAndDelete()">Sort and Delete</button>
+    <p id="arrayOutput"></p>
+    <script> function sortAndDelete() { var input = document.getElementById("arrayInput").value; var array = input.split(",").map(Number); array.sort(function (a, b) { return a - b }); array.splice(2, 3, 4); document.getElementById("arrayOutput").innerHTML = "Array elements: " + array.join(", "); } </script>
+</body>
+
+</html>
+<script src="./src/script.js"></script>
+</body>
+
+</html>
